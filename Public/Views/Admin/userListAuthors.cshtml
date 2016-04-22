@@ -1,0 +1,67 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../JavaScript1.js"></script>
+    <title>List Authors</title>
+</head>
+
+@model IEnumerable<Library_BL.Author>
+
+
+
+
+
+@{
+    ViewBag.Title = "userListAuthors";
+}
+
+<div id="navLeftPanel">
+
+<ul><li>@Html.ActionLink("Browse Books", "userListBooks", null, new { target = "my_frameContent" })</li>
+    <li>@Html.ActionLink("Browse Author", "userListAuthors", null, new { target = "my_frameContent" })</li></ul>
+
+</div>
+
+<form action="usearchAuthors" method="get">
+    Search: <input type="text" name="usearchA">
+    <input type="submit" value="Search">
+</form>
+<table  class="listTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="crod">
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthYear)
+        </td>
+        <td>
+
+            @Html.ActionLink("Books", "browserBookDetails", new { id=item.Aid }) |
+
+        </td>
+    </tr>
+}
+
+</table>

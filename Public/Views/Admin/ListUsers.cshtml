@@ -1,0 +1,76 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../JavaScript1.js"></script>
+    <title>List Authors</title>
+</head>
+
+
+@model IEnumerable<Library_BL.User>
+
+
+
+@{
+    ViewBag.Title = "ListUsers";
+}
+
+<div id="navLeftPanel">
+    <ul>
+        <li>@Html.ActionLink("Edit Book", "ListBooks", null, new { target = "my_frameContent" })</li>
+        <li>@Html.ActionLink("Edit User", "ListUsers", null, new { target = "my_frameContent" })</li>
+        <li>@Html.ActionLink("Edit Author", "ListAuthors", null, new { target = "my_frameContent" })</li>
+    </ul>
+
+</div>
+
+<p>
+    @Html.ActionLink("Add new user", "createUser")
+</p>
+<form action="searchUsers" method="get">
+    Search: <input type="text" name="searchU">
+    <input type="submit" value="Search User">
+</form>
+<table  class="listTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="crod">
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "editUser", new { personid=item.PersonId }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,49 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../JavaScript1.js"></script>
+    <title>Världens Bästa Bibliotek</title>
+</head>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="wrapper">
+    <div id="header">
+        <b>Världens bästa bibliotek</b>
+        <nav id="navPanel">
+            <ul>          
+                <li>@Html.ActionLink("StartPage", "userListBooks", null, new { target = "my_frameContent" })</li>
+                <li>@Html.ActionLink("Borrower Section", "BorrowedBooks", null, new { target = "my_frameContent" })</li>
+            </ul>
+            
+        
+
+            @if (ViewBag.showLoginPanel == true)
+            {
+                <form method="post" action="http://localhost:6391/User/LogIn">
+                    <input name="username" type="text" placeholder="Username" />
+                    <input name="password" type="password" placeholder="Password"/>
+                    <input type="submit" value="Log in" />
+                </form>
+            }
+            else
+            {
+                <p>Welcome back dear @ViewBag.userName</p>
+                <form method="get" action="http://localhost:6391/User/Logout">
+                        <input type="submit" value="Logga ut" />
+                </form>
+            }
+            </nav>
+    </div>
+ 
+  
+    <div id="iframeDiv">
+        <iframe name="my_frameContent" id="myIframe" width="1000" height="1000"></iframe>
+    </div> 
+        
+    @*<div id="footer">
+        <p id="footerText">Av: Hej alla kompisar!</p>
+    </div>*@
+</div>
+

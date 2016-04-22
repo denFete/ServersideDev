@@ -1,0 +1,4 @@
+1: inte laddar om
+2: Css och java stannar
+3: ändra div till html sida
+

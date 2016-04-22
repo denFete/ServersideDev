@@ -1,0 +1,54 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../JavaScript1.js"></script>
+    <title>List Books</title>
+</head>
+@model IEnumerable<Library_BL.Book>
+
+@{
+    ViewBag.Title = "ListBooks";
+}
+
+
+
+<div id="navLeftPanel">
+    <ul>
+        <li>@Html.ActionLink("Edit Book", "ListBooks", null, new { target = "my_frameContent" })</li>
+        <li>@Html.ActionLink("Edit User", "editUser", null, new { target = "my_frameContent" })</li>
+        <li>@Html.ActionLink("Edit Author", "ListAuthors", null, new { target = "my_frameContent" })</li>
+    </ul>
+    </div>
+
+<form action="searchBooks" method="get">
+    Search: <input type="text" name="searchB">
+    <input type="submit" value="Search">
+</form>
+
+<table class="listTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="crod">
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ISBN)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "editBook", new { isbn=item.ISBN, title = item.Title }) |
+            @Html.ActionLink("Details", "BookDetail", new { id=item.ISBN }) |
+            @Html.ActionLink("Delete", "DeleteBook", new {  ISBN=item.ISBN  })
+        </td>
+    </tr>
+}
+
+</table>

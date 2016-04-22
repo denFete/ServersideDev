@@ -1,0 +1,43 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="JavaScript1.js"></script>	
+    <title>Borrower</title>
+</head>
+
+@{
+    ViewBag.Title = "Borrower";
+}
+
+<div class="links">
+    <ul>
+        <li>@Html.ActionLink("Edit Book", "Book")</li>
+        <li>@Html.ActionLink("Edit Author", "Index")</li>
+    </ul>
+</div>
+<h2>Admin site, Borrowers</h2>
+
+
+<div>
+    <input type="submit" id="add" name="submit" onclick="show('addDiv')" value="Add Borrower"/>
+    <input type="submit" id="delete" name="submit" onclick="show('deleteDiv')" value="Delete Borrower"/>
+    <input type="submit" id="edit" name="submit" onclick="show('editDiv')" value="Edit Borrower"/>
+</div>
+
+<div id="addDiv">
+@using (Html.BeginForm("addBorrower", "DataBase", FormMethod.Get))
+{
+    <input type="text" name="borrowerFN" placeholder="Firstname" /><br />
+     <input type="text" name="borrowerLN" placeholder="Lastname" /><br />
+    <input type="submit" name="submitAddAuthor" value="Add Borrower" />
+}
+</div>
+
+<div id="deleteDiv">
+<select name="selectBorrower" size="10"></select>
+    </div>
+
+<div id="editDiv">
+    <input type="text" name="borrowerFN" placeholder="Firstname" /><br />
+     <input type="text" name="borrowerLN" placeholder="Lastname" /><br />
+
+</div>

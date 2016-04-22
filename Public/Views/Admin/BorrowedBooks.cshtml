@@ -1,0 +1,42 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../JavaScript1.js"></script>
+    <title>List Authors</title>
+</head>
+@model IEnumerable<Library_BL.Borrow>
+
+<p>
+    @Html.ActionLink("Browse Books", "userListBooks")
+</p>
+<table class="listTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BorrowDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToBeReturnedDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="crod">
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BorrowDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ToBeReturnedDate)
+        </td>
+        <td>
+            @Html.ActionLink("Reborrow", "Reborrow", new {  barcode=item.Barcode  }) |
+        </td>
+    </tr>
+}
+
+</table>

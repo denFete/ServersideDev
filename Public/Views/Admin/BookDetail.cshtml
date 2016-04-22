@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Library_BL.Author>
+
+<fieldset>
+    <legend>Detalis</legend>
+
+
+    <div id="detailsName">
+        @*@ViewBag.Book.Title*@
+        
+    </div>
+    @foreach (var item in Model)
+    {
+        <div id="detailsBooks">
+            @item.FirstName 
+            @item.LastName  |
+            @item.BirthYear 
+        </div>
+    }
+    @Html.ActionLink("Back to List", "userListBooks")
+</fieldset>
+

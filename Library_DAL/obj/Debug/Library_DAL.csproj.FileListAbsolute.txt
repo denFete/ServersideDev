@@ -1,0 +1,21 @@
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_DAL\bin\Debug\Library_DAL.dll
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_DAL\bin\Debug\Library_DAL.pdb
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_DAL\bin\Debug\Library_DTO.dll
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_DAL\bin\Debug\Library_DTO.pdb
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_DAL\obj\Debug\Library_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_DAL\obj\Debug\Library_DAL.dll
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_DAL\obj\Debug\Library_DAL.pdb
+C:\Users\Benjamin\Documents\ssdKurs\Library_DAL\bin\Debug\Library_DAL.dll
+C:\Users\Benjamin\Documents\ssdKurs\Library_DAL\bin\Debug\Library_DAL.pdb
+C:\Users\Benjamin\Documents\ssdKurs\Library_DAL\bin\Debug\Library_DTO.dll
+C:\Users\Benjamin\Documents\ssdKurs\Library_DAL\bin\Debug\Library_DTO.pdb
+C:\Users\Benjamin\Documents\ssdKurs\Library_DAL\obj\Debug\Library_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin\Documents\ssdKurs\Library_DAL\obj\Debug\Library_DAL.dll
+C:\Users\Benjamin\Documents\ssdKurs\Library_DAL\obj\Debug\Library_DAL.pdb
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_DAL\bin\Debug\Library_DAL.dll
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_DAL\bin\Debug\Library_DAL.pdb
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_DAL\bin\Debug\Library_DTO.dll
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_DAL\bin\Debug\Library_DTO.pdb
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_DAL\obj\Debug\Library_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_DAL\obj\Debug\Library_DAL.dll
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_DAL\obj\Debug\Library_DAL.pdb

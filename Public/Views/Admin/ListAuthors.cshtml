@@ -1,0 +1,77 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../JavaScript1.js"></script>
+    <title>List Authors</title>
+</head>
+
+@model IEnumerable<Library_BL.Author>
+
+@{
+    ViewBag.Title = "ListAuthors";
+}
+
+@*<h2>Index</h2>
+Salt: @ViewBag.salt <br />
+Pass: @ViewBag.pass <br />
+To Be decrypted: @ViewBag.toBeDecrypted <br />
+Store this: @ViewBag.password*@
+
+
+<div id="navLeftPanel">
+    <ul>
+        <li>@Html.ActionLink("Edit Book", "ListBooks", null, new { target = "my_frameContent" })</li>
+        <li>@Html.ActionLink("Edit User", "ListUsers", null, new { target = "my_frameContent" })</li>
+        <li>@Html.ActionLink("Edit Author", "ListAuthors", null, new { target = "my_frameContent" })</li>
+    </ul>
+
+</div>
+
+<p>
+    @Html.ActionLink("Add new author", "createAuthor")
+</p>
+<form action="searchAuthors" method="get">
+    Search: <input type="text" name="searchA">
+    <input type="submit" value="Search">
+</form>
+<table class="listTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </th>
+   
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="crod">
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthYear)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Edit", "editAuthor", new {  id=item.Aid  }) |
+            @Html.ActionLink("Books", "Details", new { id=item.Aid }) |
+            @Html.ActionLink("Delete", "DeleteAuthor", new { id=item.Aid })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,22 @@
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\bin\Debug\Library_BL.dll
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\bin\Debug\Library_BL.pdb
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\bin\Debug\Library_DAL.dll
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\bin\Debug\Library_DTO.dll
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\bin\Debug\Library_DAL.pdb
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\bin\Debug\Library_DTO.pdb
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\obj\Debug\Library_BL.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\obj\Debug\Library_BL.dll
+C:\Users\Benjamin\Documents\ssdKurs\Library_BL\obj\Debug\Library_BL.pdb
+C:\Users\Benny\Documents\GitHub\sswd\ssdKurs\Library_BL\obj\Debug\Library_BL.dll
+C:\Users\Benny\Documents\GitHub\sswd\ssdKurs\Library_BL\obj\Debug\Library_BL.pdb
+C:\Users\Benny\Documents\GitHub\sswd\ssdKurs\Library_BL\bin\Debug\Library_BL.dll
+C:\Users\Benny\Documents\GitHub\sswd\ssdKurs\Library_BL\bin\Debug\Library_BL.pdb
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_BL\bin\Debug\Library_BL.dll
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_BL\bin\Debug\Library_BL.pdb
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_BL\obj\Debug\Library_BL.dll
+C:\Users\Axel Nyberg\Documents\GitHub\sssd\ssdKurs\Library_BL\obj\Debug\Library_BL.pdb
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_BL\bin\Debug\Library_BL.dll
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_BL\bin\Debug\Library_BL.pdb
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_BL\obj\Debug\Library_BL.csprojResolveAssemblyReference.cache
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_BL\obj\Debug\Library_BL.dll
+C:\Users\Fetes\Desktop\SSD\ssdKurs\Library_BL\obj\Debug\Library_BL.pdb

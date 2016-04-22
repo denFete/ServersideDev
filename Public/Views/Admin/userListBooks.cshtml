@@ -1,0 +1,55 @@
+﻿<head>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../JavaScript1.js"></script>
+    <title>List Books</title>
+</head>
+
+
+
+@model IEnumerable<Library_BL.Book>
+
+@{
+    ViewBag.Title = "userListBooks";
+}
+
+
+
+<div id="navLeftPanel">
+    <ul><li>@Html.ActionLink("Browse Books", "userListBooks", null, new { target = "my_frameContent" })</li>
+    <li>@Html.ActionLink("Browse Author", "userListAuthors", null, new { target = "my_frameContent" })</li></ul> 
+</div>
+
+<form action="usearchBooks" method="get">
+    Search: <input type="text" name="usearchB">
+    <input type="submit" value="Search">
+</form>
+
+<table class="listTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="crod">
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ISBN)
+        </td>
+        <td>
+
+            @Html.ActionLink("Details", "BookDetail", new { isbn=item.ISBN }) |
+            @Html.ActionLink("Borrow", "borrowBook", new {  isbn=item.ISBN})
+
+        </td>
+    </tr>
+}
+
+</table>
